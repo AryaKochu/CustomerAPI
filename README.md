@@ -47,7 +47,7 @@ The REST API to the example app is described below.
 
 `GET /customer/search`
 
-  curl -X 'GET' \ 'https://localhost:44373/Customer/search?name=string' \  -H 'accept: application/json'
+    curl -X 'GET' \ 'https://localhost:44373/Customer/search?name=string' \  -H 'accept: application/json'
 
 ### Response
 
@@ -57,21 +57,21 @@ The REST API to the example app is described below.
     Connection: close
     Content-Type: application/json
     Content-Length: 2 
-   [
-      {
-        "customerId": 1,
-        "firstName": "Luke",
-        "lastName": "Leily",
-        "dateOfBirth": "2021-08-21"
-      },
-        {
-        "customerId": 2,
-        "firstName": "Ryan",
-        "lastName": "Luke",
-        "dateOfBirth": "2021-08-22"
-        }
+       [
+          {
+            "customerId": 1,
+            "firstName": "Luke",
+            "lastName": "Leily",
+            "dateOfBirth": "2021-08-21"
+          },
+            {
+            "customerId": 2,
+            "firstName": "Ryan",
+            "lastName": "Luke",
+            "dateOfBirth": "2021-08-22"
+            }
 
-]
+    ]
 
 ## Post /customer/add
 
@@ -79,15 +79,15 @@ The REST API to the example app is described below.
 
 `POST /customer/search`
 
-   curl -X 'POST' \
-  'https://localhost:44373/Customer/add' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: application/json' \
-  -d '{
-  "firstName": "string",
-  "lastName": "string",
-  "dateOfBirth": "2021-08-21"
-}'
+       curl -X 'POST' \
+      'https://localhost:44373/Customer/add' \
+      -H 'accept: application/json' \
+      -H 'Content-Type: application/json' \
+      -d '{
+      "firstName": "string",
+      "lastName": "string",
+      "dateOfBirth": "2021-08-21"
+    }'
 
 ### Response
 
@@ -109,16 +109,16 @@ The REST API to the example app is described below.
 
 `POST /customer/search`
 
-curl -X 'POST' \
-  'https://localhost:44373/Customer/update' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: application/json' \
-  -d '{
-  "id": 1,
-  "firstName": "aaa",
-  "lastName": "bbb",
-  "dateOfBirth": "2021-08-21"
-}'
+    curl -X 'POST' \
+      'https://localhost:44373/Customer/update' \
+      -H 'accept: application/json' \
+      -H 'Content-Type: application/json' \
+      -d '{
+      "id": 1,
+      "firstName": "aaa",
+      "lastName": "bbb",
+      "dateOfBirth": "2021-08-21"
+    }'
 
 ### Response
 
