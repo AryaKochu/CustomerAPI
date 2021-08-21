@@ -47,9 +47,7 @@ The REST API to the example app is described below.
 
 `GET /customer/search`
 
-  curl -X 'GET' \
-  'https://localhost:44373/Customer/search?name=string' \
-  -H 'accept: application/json'
+  curl -X 'GET' \ 'https://localhost:44373/Customer/search?name=string' \  -H 'accept: application/json'
 
 ### Response
 
